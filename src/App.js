@@ -21,7 +21,6 @@ function App() {
 
     api.post("repositories", newRepo).then((response) => {
       const repo = response.data;
-      console.log(repo);
       setRepositories([...repositories, repo]);
     });
   }
